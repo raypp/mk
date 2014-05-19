@@ -11,13 +11,16 @@
     <div class="content">
       <table class="form">
         <tbody>
-          <tr>
+          <!--<tr>
             <td><?php echo $entry_tax; ?></td>
             <td><input type="text" name="tax" value="<?php echo $tax; ?>" /></td>
-          </tr>
+          </tr>-->
           <tr>
             <td><?php echo $entry_payment; ?></td>
-            <td><?php if ($payment == 'cheque') { ?>
+			<td>
+				<input type="radio" name="payment" value="paypal" id="paypal" checked="checked" /><label for="paypal"><?php echo $text_paypal; ?></label>
+			</td>
+            <!--<td><?php if ($payment == 'cheque') { ?>
               <input type="radio" name="payment" value="cheque" id="cheque" checked="checked" />
               <?php } else { ?>
               <input type="radio" name="payment" value="cheque" id="cheque" />
@@ -34,22 +37,22 @@
               <?php } else { ?>
               <input type="radio" name="payment" value="bank" id="bank" />
               <?php } ?>
-              <label for="bank"><?php echo $text_bank; ?></label></td>
+              <label for="bank"><?php echo $text_bank; ?></label></td>-->
           </tr>
         </tbody>
-        <tbody id="payment-cheque" class="payment">
+        <!--<tbody id="payment-cheque" class="payment">
           <tr>
             <td><?php echo $entry_cheque; ?></td>
             <td><input type="text" name="cheque" value="<?php echo $cheque; ?>" /></td>
           </tr>
-        </tbody>
+        </tbody>-->
         <tbody class="payment" id="payment-paypal">
           <tr>
             <td><?php echo $entry_paypal; ?></td>
             <td><input type="text" name="paypal" value="<?php echo $paypal; ?>" /></td>
           </tr>
         </tbody>
-        <tbody id="payment-bank" class="payment">
+        <!--<tbody id="payment-bank" class="payment">
           <tr>
             <td><?php echo $entry_bank_name; ?></td>
             <td><input type="text" name="bank_name" value="<?php echo $bank_name; ?>" /></td>
@@ -70,7 +73,7 @@
             <td><?php echo $entry_bank_account_number; ?></td>
             <td><input type="text" name="bank_account_number" value="<?php echo $bank_account_number; ?>" /></td>
           </tr>
-        </tbody>
+        </tbody>-->
       </table>
     </div>
     <div class="buttons">

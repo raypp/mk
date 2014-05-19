@@ -8,7 +8,7 @@ $_['text_approved']             = '您已有%s 个审核会员！';
 $_['text_wait']                 = '请耐心等待！';
 $_['text_balance']              = '余额：';
 $_['text_cheque']               = '支票';
-$_['text_paypal']               = 'PayPal';
+$_['text_paypal']               = '支付宝';
 $_['text_bank']                 = '银行转账';
 
 // Column
@@ -44,7 +44,7 @@ $_['entry_commission']          = '佣金 (%)：<span class="help">每个订单�
 $_['entry_tax']                 = '税号：';
 $_['entry_payment']             = '支付方式：';
 $_['entry_cheque']              = '支票受益人：';
-$_['entry_paypal']              = 'PayPal 邮件账号：';
+$_['entry_paypal']              = '支付宝账号：';
 $_['entry_bank_name']           = '银行名称：';
 $_['entry_bank_branch_number']  = 'ABA/BSB 号 (分行号)：';
 $_['entry_bank_swift_code']     = 'SWIFT Code：';
