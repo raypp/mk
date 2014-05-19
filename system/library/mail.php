@@ -14,7 +14,7 @@ class Mail {
 	public $port = 25;
 	public $timeout = 5;
 	public $newline = "\n";
-	public $crlf = "\n";
+	public $crlf = "\r\n";
 	public $verp = false;
 	public $parameter = '';
 
@@ -94,19 +94,19 @@ class Mail {
 		$header .= 'Reply-To: ' . '=?UTF-8?B?' . base64_encode($this->sender) . '?=' . ' <' . $this->from . '>' . $this->newline;
 		$header .= 'Return-Path: ' . $this->from . $this->newline;
 		$header .= 'X-Mailer: PHP/' . phpversion() . $this->newline;
-		$header .= 'Content-Type: multipart/related; boundary="' . $boundary . '"' . $this->newline;
+		$header .= 'Content-Type: multipart/related; boundary="' . $boundary . '"' . $this->newline . $this->newline;
 
 		if (!$this->html) {
 			$message  = '--' . $boundary . $this->newline;
 			$message .= 'Content-Type: text/plain; charset="utf-8"' . $this->newline;
-			$message .= 'Content-Transfer-Encoding: 8bit' . $this->newline;
+			$message .= 'Content-Transfer-Encoding: 8bit' . $this->newline . $this->newline;
 			$message .= $this->text . $this->newline;
 		} else {
 			$message  = '--' . $boundary . $this->newline;
-			$message .= 'Content-Type: multipart/alternative; boundary="' . $boundary . '_alt"' . $this->newline;
+			$message .= 'Content-Type: multipart/alternative; boundary="' . $boundary . '_alt"' . $this->newline . $this->newline;
 			$message .= '--' . $boundary . '_alt' . $this->newline;
 			$message .= 'Content-Type: text/plain; charset="utf-8"' . $this->newline;
-			$message .= 'Content-Transfer-Encoding: 8bit' . $this->newline;
+			$message .= 'Content-Transfer-Encoding: 8bit' . $this->newline . $this->newline;
 
 			if ($this->text) {
 				$message .= $this->text . $this->newline;
@@ -116,7 +116,7 @@ class Mail {
 
 			$message .= '--' . $boundary . '_alt' . $this->newline;
 			$message .= 'Content-Type: text/html; charset="utf-8"' . $this->newline;
-			$message .= 'Content-Transfer-Encoding: 8bit' . $this->newline;
+			$message .= 'Content-Transfer-Encoding: 8bit' . $this->newline . $this->newline;
 			$message .= $this->html . $this->newline;
 			$message .= '--' . $boundary . '_alt--' . $this->newline;
 		}
@@ -134,7 +134,7 @@ class Mail {
 				$message .= 'Content-Transfer-Encoding: base64' . $this->newline;
 				$message .= 'Content-Disposition: attachment; filename="' . basename($attachment) . '"' . $this->newline;
 				$message .= 'Content-ID: <' . basename(urlencode($attachment)) . '>' . $this->newline;
-				$message .= 'X-Attachment-Id: ' . basename(urlencode($attachment)) . $this->newline;
+				$message .= 'X-Attachment-Id: ' . basename(urlencode($attachment)) . $this->newline . $this->newline;
 				$message .= chunk_split(base64_encode($content));
 			}
 		}
