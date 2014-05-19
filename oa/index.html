@@ -2,10 +2,13 @@
 <html>
 <head>
 <title>萌酷办公系统</title>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+<link href="/image/data/ico-128.png" rel="icon" />
+
 <style>
-.logo {text-align: center;}
+.center {text-align: center;}
 img {margin-top: 100px;margin-bottom: 50px;}
-.bizmail_loginpanel{font-size:12px;width:300px;height:auto;border:none;background:#ffffff;margin: 0 auto;}
+.bizmail_loginpanel{font-size:14px;width:300px;height:auto;border:none;background:#ffffff;margin: 0 auto;}
 .bizmail_loginpanel h3{display: none}
 .bizmail_LoginBox{padding:10px 15px;}
 .bizmail_loginpanel h3{padding-bottom:5px;margin:0 0 5px 0;border-bottom:1px solid #cccccc;font-size:14px;}
@@ -22,12 +25,36 @@ img {margin-top: 100px;margin-bottom: 50px;}
 
 </head>
 <body>
-<div class="logo">
-<img src="http://115.28.77.46/image/cache/data/Logo-vertical-100x100.png"></div>
-<script type="text/javascript" src="http://exmail.qq.com/zh_CN/htmledition/js_biz/outerlogin.js"  charset="gb18030"></script>
+<div class="center">
+<a href="../"><img src="../image/data/Logo-vertical-big.png" width="250px" height="252px" /></a></div>
+<!--<script type="text/javascript" src="http://exmail.qq.com/zh_CN/htmledition/js_biz/outerlogin.js"  charset="gb18030"></script>
 <script type="text/javascript">
 writeLoginPanel({domainlist:"imengku.com", mode:"horizontal"});
+</script>-->
+<script type="text/javascript">
+function checkInput() {
+	var b = document.form1.uin,
+		a = document.form1.pwd;
+	if (0 == b.value.length) {
+		b.focus();
+		return false;
+	}
+	if (0 == a.value.length) {
+		a.focus();
+		return false;
+	}
+	document.form1.submit();
+	setTimeout(" document.form1.pwd.value = '' ", 500);
+	return false;
+}
 </script>
-
+<div id="divLoginpanelHor" class="bizmail_loginpanel" style="width:550px;">
+<div class="bizmail_LoginBox">
+<form name="form1" action="https://exmail.qq.com/cgi-bin/login" method="post" onsubmit="return checkInput()">
+<input type="hidden" name="firstlogin" value="false"><input type="hidden" name="errtemplate" value="dm_loginpage">
+<input type="hidden" name="aliastype" value="other"><input type="hidden" name="dmtype" value="bizmail">
+<input type="hidden" name="p" value=""><label>帐号:</label><input type="text" name="uin" class="text" value="">@<span>imengku.com</span>
+<input type="hidden" name="domain" value="imengku.com"><label>&nbsp;密码:</label><input type="password" name="pwd" class="text" value="">
+<input type="submit" class="" name="" value="登录">&nbsp;<a href="https://exmail.qq.com/cgi-bin/readtemplate?check=false&amp;t=bizmail_orz" target="_blank">忘记密码？</a></form></div></div>
 </body>
 </html>
