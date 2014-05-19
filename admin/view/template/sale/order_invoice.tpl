@@ -9,18 +9,10 @@
 <body>
 <?php foreach ($orders as $order) { ?>
 <div style="page-break-after: always;">
-  <h1><?php echo $text_invoice; ?></h1>
+  <h1><?php echo $text_invoice; ?> - <?php echo $order['store_name']; ?> <?php echo $order['store_url']; ?></h1>
   <table class="store">
     <tr>
-      <td><?php echo $order['store_name']; ?><br />
-        <?php /* <?php echo $order['store_address']; ?><br />
-        <?php echo $text_telephone; ?> <?php echo $order['store_telephone']; ?><br />
-        <?php if ($order['store_fax']) { ?>
-        <?php echo $text_fax; ?> <?php echo $order['store_fax']; ?><br />
-        <?php } ?>
-        <?php echo $order['store_email']; ?><br /> */?>
-        <?php echo $order['store_url']; ?></td>
-		<td><img style="border: 1px solid gray;" src="http://chart.apis.google.com/chart?cht=qr&chs=80x80&chl=<?php echo $order['order_id']; ?>&choe=UTF-8&chld=L"></td>
+		<td><img style="border: 1px solid gray;" src="http://chart.apis.google.com/chart?cht=qr&chs=100x100&chl=<?php echo $order['order_id']; ?>&choe=UTF-8&chld=L"></td>
       <td align="right" valign="top"><table>
           <tr>
             <td><b><?php echo $text_date_added; ?></b></td>
