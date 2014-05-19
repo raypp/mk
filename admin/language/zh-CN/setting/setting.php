@@ -60,7 +60,7 @@ $_['entry_cart_weight']          = '在购物车中显示重量：<br /><span cl
 $_['entry_guest_checkout']       = '游客结账：<br /><span class="help">允许未注册用户直接结账，此项交易不适用于可下载的产品。</span>';
 $_['entry_checkout']             = '结账条款：<br /><span class="help">结账前用户必须同意的条款。</span>';
 $_['entry_order_edit']           = '编辑订单：<br /><span class="help">允许编辑订单的天数。这是必需的，因为价格和折扣可能会随时间而改变。</span>';
-$_['entry_invoice_prefix']       = '发票号前缀：<br /><span class="help">请设置发票号的前缀，如 IN/001</span>';
+$_['entry_invoice_prefix']       = '订单号前缀：<br /><span class="help">请设置订单号的前缀，如 IN/001</span>';
 $_['entry_order_status']         = '订单状态：<br /><span class="help">设置默认订单状态的命令时处理。</span>';
 $_['entry_complete_status']      = '订单完成状态：<br /><span class="help">设置客户订单在何种状态下才可下载或使用礼品券。</span>';
 $_['entry_stock_display']        = '显示库存：<br /><span class="help">显示产品页面上的库存数量。</span>';
