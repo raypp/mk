@@ -16,6 +16,7 @@ define('DIR_IMAGE', '/var/www/image/');
 define('DIR_CACHE', '/var/www/system/cache/');
 define('DIR_DOWNLOAD', '/var/www/download/');
 define('DIR_LOGS', '/var/www/system/logs/');
+define('DIR_MAIL', '/var/www/system/mail/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
