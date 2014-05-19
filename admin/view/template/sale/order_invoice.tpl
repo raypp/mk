@@ -12,7 +12,7 @@
   <h1><?php echo $text_invoice; ?> - <?php echo $order['store_name']; ?> <?php echo $order['store_url']; ?></h1>
   <table class="store">
     <tr>
-		<td><img style="border: 1px solid gray;" src="http://chart.apis.google.com/chart?cht=qr&chs=100x100&chl=<?php echo $order['order_id']; ?>&choe=UTF-8&chld=L"></td>
+		<td><img src="http://chart.apis.google.com/chart?cht=qr&chs=100x100&chl=<?php echo $order['order_id']; ?>&choe=UTF-8&chld=L"></td>
       <td align="right" valign="top"><table>
           <tr>
             <td><b><?php echo $text_date_added; ?></b></td>
