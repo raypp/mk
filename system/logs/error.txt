@@ -1,0 +1,14 @@
+2014-05-13 5:24:11 - PHP Notice:  Error: Could not load language zh-CN! in /var/www/system/library/language.php on line 39
+2014-05-13 5:25:04 - PHP Notice:  Error: Could not load language zh-CN! in /var/www/system/library/language.php on line 39
+2014-05-13 5:25:05 - PHP Notice:  Error: Could not load language zh-CN! in /var/www/system/library/language.php on line 39
+2014-05-13 5:25:05 - PHP Notice:  Error: Could not load language zh-CN! in /var/www/system/library/language.php on line 39
+2014-05-13 5:25:22 - PHP Notice:  Error: Could not load language zh-CN! in /var/www/system/library/language.php on line 39
+2014-05-13 5:32:09 - PHP Notice:  Undefined index: en in /var/www/index.php on line 178
+2014-05-13 5:32:09 - PHP Notice:  Undefined index: en in /var/www/index.php on line 179
+2014-05-13 5:32:09 - PHP Notice:  Undefined index: en in /var/www/index.php on line 182
+2014-05-13 5:32:09 - PHP Notice:  Undefined index: en in /var/www/index.php on line 183
+2014-05-13 5:32:09 - PHP Notice:  Error: Could not load language ! in /var/www/system/library/language.php on line 39
+2014-05-13 7:00:23 - PHP Notice:  Undefined variable: alipay_anti_phishing in /var/www/admin/view/template/payment/alipay.tpl on line 60
+2014-05-13 7:10:32 - PHP Notice:  Undefined variable: alipay_anti_phishing in /var/www/admin/view/template/payment/alipay.tpl on line 60
+2014-05-13 8:59:52 - PHP Notice:  Undefined variable: alipay_anti_phishing in /var/www/admin/view/template/payment/alipay.tpl on line 60
+2014-05-17 7:49:48 - PHP Notice:  Undefined variable: alipay_anti_phishing in /var/www/admin/view/template/payment/alipay.tpl on line 60
