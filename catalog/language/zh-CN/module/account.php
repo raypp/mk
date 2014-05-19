@@ -16,5 +16,6 @@ $_['text_order']       = '历史订单';
 $_['text_download']    = '下载商品';
 $_['text_return']      = '商品退换';
 $_['text_transaction'] = '我的交易';
-$_['text_newsletter']  = '订阅咨询';
+$_['text_newsletter']  = '订阅资讯';
+$_['text_recurring']   = 'Recurring payments';
 ?>

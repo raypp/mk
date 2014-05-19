@@ -113,7 +113,7 @@
 <?php if ($text_agree) { ?>
 <div class="buttons">
   <div class="right"><?php echo $text_agree; ?>
-    <input type="checkbox" name="agree" value="1" />
+    <input type="checkbox" name="agree" value="1" checked="checked" />
     <input type="button" value="<?php echo $button_continue; ?>" id="button-register" class="button" />
   </div>
 </div>

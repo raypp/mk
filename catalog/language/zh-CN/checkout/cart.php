@@ -24,6 +24,8 @@ $_['text_shipping_method']   = '请选择您希望使用的配送方式。';
 $_['text_empty']             = '您的购物车内没有商品！';
 $_['text_weight']            = '商品重量：';
 $_['text_login']             = '注意： 请<a href="%s">登录</a> 或 <a href="%s">注册新账号</a> 以便查看价格！';
+$_['text_recurring_item']    = 'Recurring item';
+$_['text_recurring']         = '%s every %s %s';
 
 // Column
 $_['column_remove']          = '删除';
@@ -57,4 +59,5 @@ $_['error_country']          = '请选择一个国家！';
 $_['error_zone']             = '请选择一个地区/省份！';
 $_['error_shipping']         = '警告： 请选择运输方式！';
 $_['error_no_shipping']      = '警告： 无有效运输方式。请<a href="%s">联系我们</a>获得帮助！';
+
 ?>
